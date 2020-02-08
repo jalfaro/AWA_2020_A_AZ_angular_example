@@ -1,0 +1,7 @@
+<h1>Calculadora</h1>
+Numero 1 : <input type="number" [(ngModel)]="num1"><br/>
+Numero 2 : <input type="number" [(ngModel)]="num2"><br/>
+<button type="button" (click)="muestraResultado()">Calcular</button>
+<div *ngIf="showMessage">
+  Respuesta {{num1 + num2}}
+</div>

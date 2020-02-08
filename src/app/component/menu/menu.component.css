@@ -1,0 +1,7 @@
+.menu {
+  width: 100%;
+  height: 100px;
+  background-color: #FF0011;
+  display: flex;
+  justify-content: space-around;
+}

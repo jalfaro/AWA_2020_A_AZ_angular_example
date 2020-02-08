@@ -1,0 +1,9 @@
+<h1>Carrito de Super</h1>
+Ingrese Producto <input #producto type="text"/><br/>
+Ingrese Precio <input #precio type="text"/><br/>
+Ingrese Cantidad <input #cantidad type="text"/><br>
+<button type="button" (click)="guardar(producto.value, precio.value, cantidad.value)">Agregar</button>
+<table *ngFor="let item of productos">
+
+  <tr><td>{{item.producto}}</td><td>{{item.precio}}</td><td>{{item.cantidad}}</td><td>{{item.cantidad * item.precio}}</td></tr>
+</table>
